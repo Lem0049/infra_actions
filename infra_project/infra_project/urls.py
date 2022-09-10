@@ -1,5 +1,5 @@
-from django.contrib import admin
-from django.urls import path, include
+from django import admin, path, include
+
 
 """infra_project URL Configuration
 
