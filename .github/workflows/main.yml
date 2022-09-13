@@ -63,8 +63,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.PASS_PHRASE }} # Если ваш ssh-ключ защищён пароле
+        password: ${{ secrets.PASS_PHRASE }} # Если ваш ssh-ключ защищён пароле
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull lem0049/for_tests_1
