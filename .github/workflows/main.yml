@@ -63,7 +63,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        key: ${{ secretst.SSH_key }}
+        key: ${{ secrets.SSH_key }}
         passphrase: ${{ secrets.PASS_PHRASE }} # Если ваш ssh-ключ защищён пароле
         script: |
           # Выполняет pull образа с DockerHub
